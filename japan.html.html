@@ -1,1 +1,42 @@
-<h1>japan</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>japan</h1>
+<button onclick="changeImage()">画像の切り替え</button>
+<br>
+<img id="image_place" src="image1.png">
+<script type="text/javascript">
+  // img要素を取得する
+  let img = document.getElementById("image_place");
+  // 表示する画像番号
+  let idx = 1;
+
+  // 画像を切り替える関数
+  function changeImage() {
+    idx++;
+    if (idx > 6) {
+      idx = 1;
+    }
+
+    // img要素のsrcに画像ファイル名を設定する
+    img.src = "jpimage." + idx + ".png";
+  }
+  let string = '日本国';
+  let string = 'Japan';
+  let string = '人口:1億2622万人（世界第11位）';
+  let string = '面積:37800 ㎢（世界61位）';
+  let string = '公用語:日本語';
+  let string = 'あいさつ:こんにちは';
+
+
+string;
+
+  </script>
+</body>
+</html>
