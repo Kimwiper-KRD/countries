@@ -1,1 +1,41 @@
-<h1>us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>japan</h1>
+<button onclick="changeImage()">画像の切り替え</button>
+<br>
+<img id="image_place" src="image.png">
+<script type="text/javascript">
+  
+ 
+
+
+  // img要素を取得する
+  let img = document.getElementById("image_place");
+  // 表示する画像番号
+  let idx = 1;
+
+  // 画像を切り替える関数
+  function changeImage() {
+    idx++;
+    if (idx > 6) {
+      idx = 1;
+    }
+
+    // img要素のsrcに画像ファイル名を設定する
+    img.src = "usimage" + idx + ".png";
+  }
+  document.write(" アメリカ合衆国 (The U.S.), ");
+  document.write("人口 : 3億2900万人 (世界第3位), 面積 : 9830000 ㎢ (世界3位),"):
+  document.write(" 公用語 : 英語, あいさつ : Hello, ");
+  document.write("a : アメリカ国旗, b :アメリカの形, c : アメリカの位置, d : 自由の女神,  e : ハリウッド, f : グランドキャニオン");
+
+
+
+  </script>

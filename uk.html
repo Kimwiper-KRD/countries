@@ -1,1 +1,44 @@
-<h1>uk</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>japan</h1>
+<button onclick="changeImage()">画像の切り替え</button>
+<br>
+<img id="image_place" src="image.png">
+<script type="text/javascript">
+  
+ 
+
+
+  // img要素を取得する
+  let img = document.getElementById("image_place");
+  // 表示する画像番号
+  let idx = 1;
+
+  // 画像を切り替える関数
+  function changeImage() {
+    idx++;
+    if (idx > 6) {
+      idx = 1;
+    }
+
+    // img要素のsrcに画像ファイル名を設定する
+    img.src = "ukimage" + idx + ".png";
+  }
+  document.write(" グレートブリテン及び北アイルランド連合王国, 通称 : イギリス(The U.K.), ");
+  document.write("人口 : 6410万人 (世界第22位), 面積 : 243000 ㎢ (世界80位),"):
+  document.write(" 公用語 : 英語, あいさつ : Hello, ");
+  document.write("a : イギリス国旗, b :イギリスの形, c : イギリスの位置, d : ビックベン, e : ストーンヘンジ, f : バッキンガム宮殿");
+
+
+
+  </script>
+
+</body>
+</html>
